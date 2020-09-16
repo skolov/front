@@ -1,0 +1,47 @@
+@import '../../../styles/config';
+
+.addExistsPhoto {
+    width: 57px;
+    height: 57px;
+    background: #c4c4c4;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-right: 18px;
+}
+
+.addExistsItem {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    background: $color-light-blue;
+    border-radius: 6px;
+}
+
+.addExistsNotFound {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: $color-light-blue;
+    border-radius: 6px;
+}
+
+.addExistsFullName {
+    flex: 1 1 0;
+}
+
+.addExistsMark {
+    margin-left: 18px;
+    fill: $color-primary;
+}
+
+.additionalInformation {
+    margin-top: 38px;
+}
+
+.errorModal {
+    width: 594px;
+}

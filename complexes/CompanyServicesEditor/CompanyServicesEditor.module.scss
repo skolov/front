@@ -1,0 +1,42 @@
+.holder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.halfHolder {
+    width: calc(50% - 20px);
+    max-width: 290px;
+    &:first-child {
+        margin-right: 20px;
+    }
+}
+.btnAdd {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+.title {
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+    margin-bottom: 30px;
+}
+.headerModal {
+    margin: 0;
+    margin-bottom: 5px;
+}

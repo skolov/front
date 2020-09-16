@@ -1,0 +1,88 @@
+.dataSelector {
+}
+
+.days {
+    min-width: 70px;
+    margin-right: 7px;
+}
+.mounth {
+    min-width: 110px;
+    margin-right: 7px;
+}
+.mounth,
+.days {
+    position: relative;
+}
+.years {
+    min-width: 72px;
+}
+.label {
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    display: flex;
+    align-items: center;
+
+    color: #989898;
+    background: #fff;
+    z-index: 2;
+    top: -6px;
+    left: 18px;
+}
+
+.fieldset {
+    display: flex;
+}
+.labelBottom,
+.helperText {
+    line-height: 16px;
+    margin-top: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+}
+.helperText {
+    margin: 0;
+    color: #ff6767;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 18px;
+}
+.arrowsMargin {
+    right: 15px;
+}
+.smallLabel {
+    max-width: 30%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.monthText {
+    max-width: calc(100% - 10px);
+}
+.dayText {
+    max-width: calc(100% - 10px);
+}
+
+// Сброс стрелок у текстового поля с типом number
+// Chrome, Firefox, Other
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input[type='number']:hover,
+input[type='number']:focus {
+    -moz-appearance: number-input;
+}

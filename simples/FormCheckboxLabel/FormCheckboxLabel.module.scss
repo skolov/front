@@ -1,0 +1,16 @@
+.checkBoxContainer {
+    display: flex;
+    justify-content: flex-start;
+
+    margin-bottom: 18px;
+}
+
+.checkBoxLabel {
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    user-select: none;
+    color: #8b8b8b;
+}
+.mutedLabel {
+}

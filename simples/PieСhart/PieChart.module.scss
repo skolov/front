@@ -1,0 +1,52 @@
+.baseTimer {
+    position: relative;
+    width: 62px;
+    height: 62px;
+}
+.baseTimer__circle {
+    fill: none;
+    stroke: none;
+}
+.baseTimer__path_elapsed {
+    stroke: #ace2ff;
+}
+.baseTimer__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #152b4d;
+}
+
+.baseTimer__pathRemaining {
+    stroke-linecap: round;
+    transform-origin: center;
+    transition: 1s linear all;
+    stroke: #0084cc;
+    -moz-transform: scale(-1, 1) rotate(90deg);
+    -webkit-transform: scale(-1, 1) rotate(90deg);
+    -o-transform: scale(-1, 1) rotate(90deg);
+    transform: scale(-1, 1) rotate(90deg);
+    filter: FlipH;
+    -ms-filter: 'FlipH';
+}
+
+.baseTimer__svg {
+    transform: scaleX(-1);
+}
+
+.revers {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

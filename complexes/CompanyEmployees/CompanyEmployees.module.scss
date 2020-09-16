@@ -1,0 +1,174 @@
+@import '../../../styles/config';
+
+.wrap {
+    box-sizing: border-box;
+    position: relative;
+
+    margin: 30px -10px -20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.item {
+    @extend .cart;
+    padding: 24px 20px;
+    margin: 0 10px 30px 10px;
+    max-width: 23.2%;
+    flex: 0 0 23.2%;
+
+    position: relative;
+    &:after {
+        content: '';
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        background: -moz-linear-gradient(
+            left,
+            rgba(255, 255, 255, 0.6) 0%,
+            rgba(255, 255, 255, 1) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            left,
+            rgba(255, 255, 255, 0.6) 0%,
+            rgba(255, 255, 255, 1) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.6) 0%,
+            rgba(255, 255, 255, 1) 100%
+        ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+        border-radius: 0 6px 6px 0;
+    }
+}
+
+.itemCart {
+}
+
+.itemHide .itemCart {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-image: url('../../../assets/icons/prototype/hide.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 6px;
+        z-index: 1;
+    }
+}
+
+.itemIntroduce {
+    min-width: 0;
+    flex: 1 1 0;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.itemName {
+    font-weight: 500;
+    line-height: 16px;
+    display: flex;
+}
+
+.itemNote {
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 4px;
+    text-transform: capitalize;
+}
+
+.itemNameText {
+    min-width: 0;
+    overflow: hidden;
+    white-space: pre-wrap;
+}
+
+.itemAvatarPhoto {
+    width: 65px;
+    height: 65px;
+    background-color: #c4c4c4;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.itemTop {
+    display: flex;
+}
+
+.itemName {
+    font-weight: 500;
+    line-height: 16px;
+    display: flex;
+}
+.itemPosition,
+.itemRole {
+    display: flex;
+    font-size: 12px;
+    color: #9b9b9b;
+    margin-top: 4px;
+}
+.itemText {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.itemRole {
+    margin-top: 2px;
+}
+
+.itemActions {
+    position: relative;
+    z-index: 2;
+}
+
+.itemActionsButton {
+    padding: 5px;
+    display: flex;
+    margin-top: -5px;
+    margin-right: -5px;
+    background: none;
+    border: none;
+}
+
+.itemActionsMenu {
+    position: absolute;
+    padding: 10px 0;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px rgba(145, 145, 145, 0.15);
+    border-radius: 6px;
+    z-index: 1;
+    right: 0;
+    bottom: 70px;
+    min-width: 150px;
+}
+
+.itemActionsOption {
+    height: 34px;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    padding: 1px 15px;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f4f4f4;
+    }
+}
